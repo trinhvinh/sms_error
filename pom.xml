@@ -473,7 +473,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>gws</finalName>
+		<finalName>sms</finalName>
 		<plugins>
 			<plugin>
 				<artifactId>maven-eclipse-plugin</artifactId>
