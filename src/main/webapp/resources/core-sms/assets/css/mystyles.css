@@ -1,0 +1,18 @@
+  div.jqx-grid-column-header  div div{
+    	text-align: center !important;
+    }
+    
+    .input-group-addon
+    {
+    background-color: LightSteelBlue!important;
+    border:1px solid LightSteelBlue!important;
+    }
+     .jqx-grid-cell-pinned,
+     .jqx-grid-column-header,
+     .jqx-grid-columngroup-header
+    {
+        background-color: LightSteelBlue!important;
+    }
+    .datepicker.dropdown-menu
+    { z-index: 99999999999999!important;
+    }
