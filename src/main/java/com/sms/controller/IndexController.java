@@ -1,8 +1,6 @@
 package com.sms.controller;
 
 import java.io.IOException;
-import java.text.DateFormat;
-import java.util.Date;
 import java.util.Locale;
 
 import javax.servlet.ServletException;
@@ -13,12 +11,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.gws.common.util.command;
-import com.gws.vo.RequestVO;
+import com.sms.common.utils.Command;
 
 /**
  * Handles requests for the application home page.
@@ -37,7 +33,7 @@ public class IndexController {
 
 		String currPath = request.getParameter("path");
 		logger.info(String.format("Welcome home! The client locale is {0}.", locale));
-		String currUserName = command.getUserLogined(request, response);
+		String currUserName = Command.getUserLogined(request, response);
 		if ("".equals(currUserName)) {
 			return "redirect:/login.gw";
 		} else {

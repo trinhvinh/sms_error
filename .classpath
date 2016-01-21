@@ -48,5 +48,14 @@
 	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/xmlbeans-2.3.0.jar"/>
 	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/xmlbeans.jar"/>
 	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/asm-attrs.jar"/>
+	<classpathentry kind="lib" path="C:/Users/MACBOOK/.m2/repository/com/lowagie/itext/2.1.7/itext-2.1.7.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="com.lowagie"/>
+			<attribute name="maven.artifactId" value="itext"/>
+			<attribute name="maven.version" value="2.1.7"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
