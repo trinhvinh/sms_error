@@ -125,7 +125,7 @@
 
 					var progress_image_src = '${pageContext.request.contextPath}/assets/gws/vms/progress_image.gif';
 					var success_response = "true";
-					var success_redirect_page = '${pageContext.request.contextPath}/index.gw';
+					var success_redirect_page = '${pageContext.request.contextPath}/index.sms';
 		         	var username=$("#ajaxlogin_username").val();
 		         	var password= $("#ajaxlogin_password").val();
 		         	var oldcontent = '<button type="submit" class="btn btn-primary pull-right">Login <i class="fa fa-arrow-circle-right"></i> </button>';
@@ -134,7 +134,7 @@
 				 	
 		         	$.ajax({
 		            	type: "POST",
-		            	url: "${pageContext.request.contextPath}/login.gw",
+		            	url: "${pageContext.request.contextPath}/login.sms",
 		            	data: "username="+username+"&password="+b64_md5(password),
 		            	success: function(response){
 		              		if(response == success_response)

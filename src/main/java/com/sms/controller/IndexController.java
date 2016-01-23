@@ -22,8 +22,7 @@ import com.sms.common.utils.Command;
 @Controller
 public class IndexController {
 
-	private static final Logger logger = LoggerFactory
-			.getLogger(IndexController.class);
+	private static final Logger logger = LoggerFactory.getLogger(IndexController.class);
 
 	/**
 	 * Simply selects the home view to render by returning its name.
@@ -35,9 +34,11 @@ public class IndexController {
 		logger.info(String.format("Welcome home! The client locale is {0}.", locale));
 		String currUserName = Command.getUserLogined(request, response);
 		if ("".equals(currUserName)) {
-			return "redirect:/login.gw";
+			//return "redirect:/login.sms";
+			return "index";
 		} else {
-			return "index_interface";
+			return "index";
+			//return "index_interface";
 		}
 	}
 

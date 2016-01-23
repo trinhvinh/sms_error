@@ -1,4 +1,8 @@
 eclipse.preferences.version=1
 encoding//src/main/resources/properties/database.properties=UTF-8
-encoding//src/main/webapp/WEB-INF/pages/plugin/taglibrary.jsp=UTF-8
+encoding//src/main/webapp/pluginjsp/interface/footer.jsp=UTF-8
+encoding//src/main/webapp/pluginjsp/interface/header.jsp=UTF-8
+encoding//src/main/webapp/pluginjsp/interface/sidebar.jsp=UTF-8
+encoding//src/main/webapp/pluginjsp/interface/sidebar2.jsp=UTF-8
+encoding//src/main/webapp/pluginjsp/taglibrary.jsp=UTF-8
 encoding/<project>=UTF-8
