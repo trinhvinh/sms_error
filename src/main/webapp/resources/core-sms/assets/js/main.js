@@ -1,7 +1,6 @@
 'use strict';
 var Main = function() {
 	var $html = $('html'), $win = $(window), wrap = $('.app-aside'), MEDIAQUERY = {}, app = $('#app');
-
 	MEDIAQUERY = {
 		desktopXL: 1200,
 		desktop: 992,
@@ -14,7 +13,6 @@ var Main = function() {
 		var eventObject = isTouch() ? 'click' : 'mouseenter', elem = $('#sidebar'), ul = "", menuTitle, _this;
 
 		elem.on('click', 'a', function(e) {
-
 			_this = $(this);
 			if(isSidebarClosed() && !isSmallDevice() && !_this.closest("ul").hasClass("sub-menu"))
 				return;
@@ -135,10 +133,9 @@ var Main = function() {
 			pScroll.on("mousemove", function() {
 				$(this).perfectScrollbar('update');
 			});
-
 		}
 	};
-	//toggle class
+	//	toggle class
 	var toggleClassOnElement = function() {
 		var toggleAttribute = $('*[data-toggle-class]');
 		toggleAttribute.each(function() {
@@ -177,7 +174,8 @@ var Main = function() {
 
 		});
 	};
-	//switchery
+	
+	//	switchery
 	var switcheryHandler = function() {
 		var elems = Array.prototype.slice.call(document.querySelectorAll('.js-switch'));
 
@@ -233,7 +231,7 @@ var Main = function() {
 		app.hasClass("app-sidebar-fixed") ? $('#fixed-sidebar').prop('checked', true) : $('#fixed-sidebar').prop('checked', false);
 		app.hasClass("app-sidebar-closed") ? $('#closed-sidebar').prop('checked', true) : $('#closed-sidebar').prop('checked', false);
 		app.hasClass("app-footer-fixed") ? $('#fixed-footer').prop('checked', true) : $('#fixed-footer').prop('checked', false);
-		$('#skin_color').attr("href", "school_reources/assets/css/themes/" + appSetting.theme + ".css");
+		$('#skin_color').attr("href", "resources/core-sms/assets/css/themes/" + appSetting.theme + ".css");
 		$('input[name="setting-theme"]').each(function() {
 			$(this).val() == appSetting.theme ? $(this).prop('checked', true) : $(this).prop('checked', false);
 		});
@@ -241,7 +239,7 @@ var Main = function() {
 
 		$('input[name="setting-theme"]').change(function() {
 			var selectedTheme = $(this).val();
-			$('#skin_color').attr("href", "school_reources/assets/css/themes/" + selectedTheme + ".css");
+			$('#skin_color').attr("href", "resources/core-sms/assets/css/themes/" + selectedTheme + ".css");
 			switchLogo(selectedTheme);
 			appSetting.theme = selectedTheme;
 			$.cookie("clip-setting", JSON.stringify(appSetting));
@@ -274,21 +272,21 @@ var Main = function() {
 				case "theme-3":
 				case "theme-5":
 				case "theme-6":
-					$(".navbar-brand img").attr("src", "school_reources/assets/images/vng_logo.gif");
+					$(".navbar-brand img").attr("src", "resources/core-sms/assets/images/logo.png");
 					break;
-
 				default:
-					$(".navbar-brand img").attr("src", "school_reources/assets/images/vng_logo.gif");
+					$(".navbar-brand img").attr("src", "resources/core-sms/assets/images/logo.png");
 					break;
 			};
 		};
+		
 		function defaultSetting() {
 			$('#fixed-header').prop('checked', true);
 			$('#fixed-sidebar').prop('checked', true);
 			$('#closed-sidebar').prop('checked', false);
 			$('#fixed-footer').prop('checked', false);
-			$('#skin_color').attr("href", "school_reources/assets/css/themes/theme-1.css");
-			$(".navbar-brand img").attr("src", "school_reources/assets/images/logo.png");
+			$('#skin_color').attr("href", "resources/core-sms/assets/css/themes/theme-1.css");
+			$(".navbar-brand img").attr("src", "resources/core-sms/assets/images/logo.png");
 
 		};
 	};

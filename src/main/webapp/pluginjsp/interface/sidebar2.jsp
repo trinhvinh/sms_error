@@ -1,8 +1,6 @@
 <%@page import="java.util.List"%>
-<%@page import="com.sms.vo.SystemMenuVO"%>
-<%@page import="com.sms.controller.SystemMenuManager"%>
 
-<div class="sidebar app-aside" id="sidebar">
+<div id="sidebar" class="sidebar app-aside">
 	<div class="sidebar-container perfect-scrollbar">
 		<nav>
 			<!-- start: SEARCH FORM -->

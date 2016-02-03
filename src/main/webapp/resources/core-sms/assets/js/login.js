@@ -1,8 +1,6 @@
 var Login = function() {
 	"use strict";
-	
-	
-	
+
 	var runSetDefaultValidation = function() {
 		$.validator.setDefaults({
 			errorElement : "span", // contain the error msg in a small tag
@@ -76,11 +74,39 @@ var Login = function() {
 			}
 		});
 	};
+	var runRecoveryValidator = function() {
+		var form4 = $('.form-recovery');
+		var errorHandler = $('.errorHandler', form4);
+		form4.validate({
+			rules : {				
+				password : {
+					minlength : 6,
+					required : true
+				},
+				password_again : {
+					required : true,
+					minlength : 5,
+					equalTo : "#password"
+				}
+			},
+			submitHandler : function(form4) {
+				errorHandler.hide();
+				//form.submit();
+			},
+			invalidHandler : function(event, validator) {//display error alert on form submit
+				errorHandler.show();
+			}
+		});
+	};
 	var runRegisterValidator = function() {
 		var form3 = $('.form-register');
 		var errorHandler3 = $('.errorHandler', form3);
 		form3.validate({
 			rules : {
+				username : {
+					minlength : 2,
+					required : true
+				},
 				full_name : {
 					minlength : 2,
 					required : true
@@ -129,6 +155,7 @@ var Login = function() {
 			runLoginValidator();
 			runForgotValidator();
 			runRegisterValidator();
+			runRecoveryValidator();
 		}
 	};
 }();

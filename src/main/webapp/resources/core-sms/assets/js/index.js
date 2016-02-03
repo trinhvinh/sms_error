@@ -1,6 +1,8 @@
 'use strict';
 var Index = function() {
+	
 	var chart1Handler = function() {
+		
 		var data = {
 			labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
 			datasets: [{
@@ -25,7 +27,6 @@ var Index = function() {
 		};
 
 		var options = {
-
 			maintainAspectRatio: false,
 
 			// Sets the chart to be responsive
@@ -87,6 +88,7 @@ var Index = function() {
 		//and append it to your page somewhere
 		$('#chart1Legend').append(legend);
 	};
+	
 	var chart2Handler = function() {
 		// Chart.js Data
 		var data = {
@@ -151,6 +153,7 @@ var Index = function() {
 		//and append it to your page somewhere
 		$('#chart2Legend').append(legend);
 	};
+	
 	var chart3Handler = function() {
 		// Chart.js Data
 		var data = [{
@@ -213,6 +216,7 @@ var Index = function() {
 		//and append it to your page somewhere
 		$('#chart3Legend').append(legend);
 	};
+	
 	var chart4Handler = function() {
 		// Chart.js Data
 		var data = {
@@ -313,6 +317,7 @@ var Index = function() {
 		clearTimeout(sparkResize);
 		sparkResize = setTimeout(sparklineHandler, 500);
 	});
+	
 	var sparklineHandler = function() {
 
 		$(".sparkline-1 span").sparkline([300, 523, 982, 811, 1300, 1125, 1487], {
@@ -334,6 +339,7 @@ var Index = function() {
 				}
 			}
 		});
+		
 		$(".sparkline-2 span").sparkline([400, 650, 886, 443, 502, 412, 353], {
 			type: "bar",
 			barColor: "#5CB85C",
@@ -353,6 +359,7 @@ var Index = function() {
 				}
 			}
 		});
+		
 		$(".sparkline-3 span").sparkline([4879, 6567, 5022, 8890, 9234, 7128, 4811], {
 			type: "bar",
 			barColor: "#46B8DA",
@@ -372,6 +379,7 @@ var Index = function() {
 				}
 			}
 		});
+		
 		$(".sparkline-4 span").sparkline([1122, 1735, 559, 2534, 1600, 2860, 1345, 1987, 2675, 457, 3965, 3765], {
 			type: "line",
 			lineColor: '#8e8e93',
@@ -401,10 +409,10 @@ var Index = function() {
 					9: 'October',
 					10: 'November',
 					11: 'December'
-
 				}
 			}
 		});
+		
 		$(".sparkline-5 span").sparkline([422, 1335, 1059, 2235, 1300, 1860, 1126, 1387, 1675, 1357, 2165, 1765], {
 			type: "line",
 			lineColor: '#8e8e93',
@@ -434,7 +442,6 @@ var Index = function() {
 					9: 'October',
 					10: 'November',
 					11: 'December'
-
 				}
 			}
 		});

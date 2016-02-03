@@ -9,6 +9,7 @@
 		</c:when>
 		<c:otherwise>
 			<h2>Username : ${username} <br/>You do not have permission to access this page!</h2>
+			<img alt="403" src="/resources/core-sms/assets/images/403.png">
 		</c:otherwise>
 	</c:choose>
 

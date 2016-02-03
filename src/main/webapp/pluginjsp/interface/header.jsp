@@ -10,7 +10,7 @@
 			<i class="ti-align-justify"></i>
 		</a> 
 		<a class="navbar-brand" href="#"> 
-			<img src="${ctx }/resources/core-sms/assets/images/logo.gif" alt="hvmtlogo" />
+			<img src="${ctx }/resources/core-sms/assets/images/logo.png" alt="hvmtlogo" />
 		</a> 
 		<a href="#" class="sidebar-toggler pull-right visible-md visible-lg" data-toggle-class="app-sidebar-closed" data-toggle-target="#app">
 			<i class="ti-align-justify"></i>
@@ -21,20 +21,19 @@
 		</a>
 	</div>
 	<!-- end: NAVBAR HEADER -->
+	
 	<!-- start: NAVBAR COLLAPSE -->
 	<div class="navbar-collapse collapse">
 		<ul class="nav navbar-right">
 			<!-- start: MESSAGES DROPDOWN -->
 			<li class="dropdown" style="display: none;">
-				<a href class="dropdown-toggle" data-toggle="dropdown"> 
+				<a href="" class="dropdown-toggle" data-toggle="dropdown"> 
 					<span class="dot-badge partition-red"></span> 
 					<i class="ti-comment"></i>
 					<span>MESSAGES</span>
 				</a>
 				<ul	class="dropdown-menu dropdown-light dropdown-messages dropdown-large">
-					<li>
-						<span class="dropdown-header">Unread messages</span>
-					</li>
+					<li><span class="dropdown-header">Unread messages</span></li>
 					<li>
 						<div class="drop-down-wrapper ps-container">
 							<ul>
@@ -88,6 +87,7 @@
 				</ul>
 			</li>
 			<!-- end: MESSAGES DROPDOWN -->
+			
 			<!-- start: ACTIVITIES DROPDOWN -->
 			<li class="dropdown" style="display: none">
 				<a href class="dropdown-toggle" data-toggle="dropdown"> 
@@ -110,9 +110,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="view-all">
-						<a href="#"> See All </a>
-					</li>
+					<li class="view-all"><a href="#"> See All </a></li>
 				</ul>
 			</li>
 			<!-- end: ACTIVITIES DROPDOWN -->
@@ -134,19 +132,20 @@
 			<!-- start: USER OPTIONS DROPDOWN -->
 			<li class="dropdown current-user">
 				<a href class="dropdown-toggle" data-toggle="dropdown"> 
-					<img src="${ctx }/resources/core-sms/assets/images/avatar-1.jpg" alt="Admin"> 
+					<img src="${ctx}/resources/core-sms/assets/images/avatar-1.jpg" alt="Admin"> 
 					<span class="username">Admin<i class="ti-angle-down"></i></span> 
 				</a>
 				<ul class="dropdown-menu dropdown-dark">
-					<li><a href="pages_user_profile.html"> My Profile </a></li>
+					<li><a href="${ctx}/sms/user-profile.sms"> My Profile </a></li>
 					<li><a href="pages_calendar.html"> My Calendar </a></li>
 					<li><a hef="pages_messages.html"> My Messages (3) </a></li>
 					<li><a href="login_lockscreen.html"> Lock Screen </a></li>
-					<li><a href="${ctx}/logout.gw"> Log Out </a></li>
+					<li><a href="${ctx}/logout.sms"> Log Out </a></li>
 				</ul>
 			</li>
 			<!-- end: USER OPTIONS DROPDOWN -->
 		</ul>
+		
 		<!-- start: MENU TOGGLER FOR MOBILE DEVICES -->
 		<div class="close-handle visible-xs-block menu-toggler" data-toggle="collapse" href=".navbar-collapse">
 			<div class="arrow-left"></div>

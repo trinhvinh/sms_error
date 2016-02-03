@@ -3796,7 +3796,7 @@ a.text-light:hover {
   background-color: #ffffff;
   position: relative;
   color: #5b5b60;
-  border: 1px solid gray;
+  border: 1px solid rgba(0, 0, 0, 0.07);
 }
 
 .panel-dark, .partition-dark {
@@ -9325,9 +9325,10 @@ nav.links a {
   }
 }
 .main-login .logo {
-  padding: 0 10px;
+  border-bottom: 1px solid #e6e8e8;
+  padding: 10px 0;
 }
-.main-login .box-login, .main-login .box-forgot, .main-login .box-register {
+.main-login .box-login, .main-login .box-forgot, .main-login .box-register, .main-login .box-recovery {
   background: #FFFFFF;
   border-radius: 5px;
   overflow: hidden;

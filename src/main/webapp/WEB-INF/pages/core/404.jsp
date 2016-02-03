@@ -5,6 +5,7 @@
 	<c:choose>
 		<c:otherwise>
 			<h2>Page not found!</h2>
+			<img alt="403" src="/resources/core-sms/assets/images/404.png">
 		</c:otherwise>
 	</c:choose>
 </body>

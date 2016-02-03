@@ -218,26 +218,26 @@ public class Command {
 
 	@SuppressWarnings("deprecation")
 	public static String getAttachedFileFolderPath(HttpServletRequest request) {
-		return request.getRealPath("/") + File.separatorChar + "Upload_Folder"
+		return request.getRealPath("/") + File.separatorChar + "UploadFolder"
 				+ File.separatorChar + "Attach_File" + File.separatorChar;
 	}
 
 	@SuppressWarnings("deprecation")
 	public static String getAvartaFileFolderPath(HttpServletRequest request) {
-		return request.getRealPath("/") + File.separatorChar + "Upload_Folder"
+		return request.getRealPath("/") + File.separatorChar + "UploadFolder"
 				+ File.separatorChar + "Avartar" + File.separatorChar;
 	}
 
 	// ngoc phuc report
 	public static String getReportFolderPath1(HttpServletRequest request) {
 		return request.getRealPath("/") + File.separatorChar + "WEB-INF"
-				+ File.separatorChar + "jsp" + File.separatorChar + "gwi"
+				+ File.separatorChar + "jsp" + File.separatorChar + "sms"
 				+ File.separatorChar + "reports" + File.separatorChar;
 	}
 
 	public static String getSampleReportFolderPath(HttpServletRequest request) {
 		return request.getRealPath("/") + File.separatorChar + "WEB-INF"
-				+ File.separatorChar + "jsp" + File.separatorChar + "gwi"
+				+ File.separatorChar + "jsp" + File.separatorChar + "sms"
 				+ File.separatorChar + "ImportSample" + File.separatorChar;
 	}
 }
