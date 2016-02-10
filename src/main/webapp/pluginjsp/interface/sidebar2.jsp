@@ -28,7 +28,7 @@
 			</div>
 			<ul class="main-navigation-menu">
 				<li class="active open">
-					<a href="index.sms">
+					<a href="/index.sms">
 						<div class="item-content">
 							<div class="item-media">
 								<i class="ti-home"></i>

@@ -57,7 +57,7 @@
 	
 	<script src="${pageContext.request.contextPath}/resources/core-sms/assets/js/md5.js"></script>
 	
-<script>
+<!-- <script>
   	function add_msg(text){ document.getElementById('info').innerHTML += '<li>' + text + '</li>'; }
   		top.window.session = {
     	options: { gapi_location: true },
@@ -83,7 +83,7 @@
    		}
 	}
 };
-</script>
+</script> -->
 
 <script src="http://codejoust.github.com/session.js/session-0.4.js"></script>
 

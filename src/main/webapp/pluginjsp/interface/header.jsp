@@ -9,8 +9,8 @@
 		<a href="#" class="sidebar-mobile-toggler pull-left hidden-md hidden-lg" class="btn btn-navbar sidebar-toggle" data-toggle-class="app-slide-off" data-toggle-target="#app"data-toggle-click-outside="#sidebar"> 
 			<i class="ti-align-justify"></i>
 		</a> 
-		<a class="navbar-brand" href="#"> 
-			<img src="${ctx }/resources/core-sms/assets/images/logo.png" alt="hvmtlogo" />
+		<a class="navbar-brand" href="/index.sms"> 
+			<img src="${ctx }/resources/core-sms/assets/images/logo.png" alt="logo" />
 		</a> 
 		<a href="#" class="sidebar-toggler pull-right visible-md visible-lg" data-toggle-class="app-sidebar-closed" data-toggle-target="#app">
 			<i class="ti-align-justify"></i>
