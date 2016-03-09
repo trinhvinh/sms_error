@@ -3,6 +3,7 @@ package com.sms.controller;
 import java.io.IOException;
 import java.util.Locale;
 
+import javax.servlet.ServletConfig;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -25,10 +26,23 @@ public class UserController {
 	@Autowired
 	UserService userService;
 	
+	private ServletConfig config;
+	public void setServletConfig(ServletConfig servletConfig) {
+		config = servletConfig;
+		
+	}  
+	
 	@RequestMapping(value = "/sms/user-profile.*", method = RequestMethod.GET)
 	public String userProfile(HttpServletRequest request, HttpServletResponse response, Locale locale, Model model)  throws IOException {
 
-		return "/sms/user/user-profile";
+		return "/sms/user/userprofile";
+	}
+	
+	
+	@RequestMapping(value = "/sms/userlist.*")
+	public String userList(HttpServletRequest request, HttpServletResponse response, Locale locale, Model model)  throws IOException {
+
+		return "/sms/user/userlist";
 	}
 	
 }

@@ -43,97 +43,94 @@
 				<li>
 					<a href="javascript:void(0)">
 						<div class="item-content">
-							<div class="item-media"><i class="ti-folder"></i></div>
-							<div class="item-inner"> <span class="title"> School Management </span><i class="icon-arrow"></i></div>
-						</div>
-					</a>
-					<ul class="sub-menu">
-						<li>
-							<a href="javascript:;"> <span>Basic Information</span> <i class="icon-arrow"></i></a>
-							<ul class="sub-menu">
-								<li><a href="javascript:void(0);" onclick="openLink(' ${ctx }/schoolInfo/view.sms?menuCd=045');"> School Information </a></li>
-								<li><a href="javascript:void(0);" onclick="openLink(' ${ctx }/gradeClass/list.sms');"> Grade class registeration </a></li>
-								<li><a href="javascript:void(0);" onclick="openLink(' ${ctx }/student/list.sms');"> Student registeration </a></li>
-								<li><a href="javascript:void(0);" onclick="openLink(' ${ctx }/ClassStudent/view.sms');"> Student class information </a></li>
-								<li><a href="javascript:voide(0)" onclick="openLink(' ${ctx }/studentVirtual/list.sms');"> Student account management </a></li>
-								<li><a href="javascript:voide(0)" onclick="openLink(' ${ctx }/Subjects/list.sms');"> Subjects </a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="javascript:;"> <span>Virtual Account</span><i class="icon-arrow"></i></a>
-							<ul class="sub-menu">
-								<li><a href="javascript:void(0);" onclick="openLink(' ${ctx }/VirtualAccount/view.sms');"> virtual account </a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="javascript:;"> <span>Payment </span> <i class="icon-arrow"></i></a>
-							<ul class="sub-menu">
-								<li><a href="javascript:void(0);" onclick="openLink(' ${ctx }/PaymentPeriod/view.sms');"> Payment Period </a></li>
-								<li><a href="javascript:void(0);" onclick="openLink(' ${ctx }/PaymentInfo/view.sms');"> Payment amount management </a></li>
-								<li><a href="javascript:void(0);" onclick="openLink(' ${ctx }/ReductionInfo/view.sms');"> Reduction Info </a></li>
-								<li><a href="javascript:void(0);" onclick="openLink(' ${ctx }/DailyTrialBalance/view.sms');"> Daily Trial balance </a></li>
-							</ul>
-						</li>
-						
-						<li>
-							<a href="javascript:;"><span> Bill Collection </span> <i class="icon-arrow"></i></a>
-							<ul class="sub-menu">
-								<li><a href="javascript:void(0);" onclick="openLink(' ${ctx }/Bill/view.sms');"> Bill Collection </a></li>
-								<li><a href="javascript:void(0);" onclick="openLink(' ${ctx }/ReceiptHandling/view.sms');"> Receipt Handling </a>
-								<li><a href="javascript:void(0);" onclick="openLink(' ${ctx }/TransactionChecking/view.sms');"> Transaction Checking </a></li>
-								<li><a href="javascript:void(0);" onclick="openLink(' ${ctx }/BillHistory/view.sms');"> Bill History </a></li>
-							</ul>
-						</li>
-					<li>
-						<a href="javascript:;"> <span>Refund </span><i class="icon-arrow"></i>						
-						</a>
-							<ul class="sub-menu">
-								<li><a href="javascript:void(0);" onclick="openLink(' ${ctx }/Refund/view.sms');"> Refund Management </a></li>
-								<li><a href="javascript:void(0);" onclick="openLink(' ${ctx }/RefundHandling/view.sms');"> Refund Handling </a></li>
-								<li><a href="javascript:void(0);" onclick="openLink(' ${ctx }/TransactionChecking/view.sms');"> Transaction Checking </a></li>
-							</ul>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="javascript:void(0)">
-						<div class="item-content">
 							<div class="item-media">
 								<i class="ti-folder"></i>
 							</div>
-							<div class="item-inner">
-								<span class="title"> Banking Management </span><i class="icon-arrow"></i>
+							<div class="item-inner"> 
+								<span class="title"> School Management </span><i class="icon-arrow"></i>
 							</div>
 						</div>
 					</a>
 					<ul class="sub-menu">
-						<li>
-							<a href="javascript:;"> 
-								<span>Basic Information</span> <i class="icon-arrow"></i>
-							</a>
+						<li>  
+							<a href="javascript:void(0);"><span> School Information </span><i class="icon-arrow"></i></a>
 							<ul class="sub-menu">
-								<li><a href="javascript:void(0);" onclick="openLink(' ${ctx }/schoolInfo/view.sms?menuCd=045');"> School Information </a></li>
-								<li><a href="#"> Sample Link 2 </a></li>
-								<li><a href="#"> Sample Link 3 </a></li>
-							</ul>
+								<li><a href="javascript:;" onclick="openLink('${ctx }/sms/school/schoolprofile.sms');"> School Information </a></li>
+							</ul>						
+						</li>
+						<li>
+							<a href="javascript:void(0);"><span> Grade Class </span><i class="icon-arrow"></i></a>
+							<ul class="sub-menu">
+								<li><a href="javascript:void(0);" onclick="openLink('${ctx }/sms/gradeclass.sms');"> Grade Class Information </a></li>								
+							</ul>						
 						</li>						
 						<li>
-							<a href="javascript:;"> <span>Remittance</span><i class="icon-arrow"></i></a>
+							<a href="javascript:void(0);"><span> Department </span><i class="icon-arrow"></i></a>
 							<ul class="sub-menu">
-								<li><a href="#"> Fund Remittance </a></li>
-								<li><a href="#"> Domestic Remittance </a></li>
+								<li><a href="javascript:void(0);" onclick="openLink('${ctx }/student/list.sms');"> Department Information </a></li>
+							</ul>				
+						</li>						
+						<li>
+							<a href="javascript:void(0);"> <span> Teacher </span><i class="icon-arrow"></i></a>
+							<ul class="sub-menu">
+								<li><a href="javascript:void(0);" onclick="openLink('${ctx }/sms/school/school-profile.sms');"> Teacher Information </a></li>
+								<li><a href="javascript:void(0);" onclick="openLink('${ctx }/gradeClass/list.sms');"> Teacher Account Banking </a></li>
+								<li><a href="javascript:void(0);" onclick="openLink('${ctx }/student/list.sms');"> Teacher Account User </a></li>								
+							</ul>
+						</li>			
+						<li>
+							<a href="javascript:void(0);"> <span> Students </span><i class="icon-arrow"></i></a>
+							<ul class="sub-menu">
+								<li><a href="javascript:void(0);" onclick="openLink('${ctx }/sms/school/school-profile.sms');"> Student Registration </a></li>
+								<li><a href="javascript:void(0);" onclick="openLink('${ctx }/gradeClass/list.sms');"> Student Class </a></li>
+								<li><a href="javascript:void(0);" onclick="openLink('${ctx }/ClassStudent/view.sms');"> Student Account Banking </a></li>
+								<li><a href="javascript:void(0);" onclick="openLink('${ctx }/studentVirtual/list.sms');"> Student Account User </a></li>
+								<li><a href="javascript:void(0);" onclick="openLink('${ctx }/Subjects/list.sms');"> Management Subjects </a></li>
+								<li><a href="javascript:void(0);" onclick="openLink('${ctx }/Subjects/list.sms');"> Student Scores</a></li>
 							</ul>
 						</li>
 						<li>
-							<a href="javascript:;"> 
-								<span>Transaction History</span> <i class="icon-arrow"></i>
-							</a>
+							<a href="javascript:void(0);"> <span> Academic Result </span><i class="icon-arrow"></i></a>
 							<ul class="sub-menu">
-								<li><a href="#"> Transaction Inquiry </a></li>
+								<li><a href="javascript:void(0);" onclick="openLink('${ctx }/VirtualAccount/view.sms');"> Scores Information </a></li>
+								<li><a href="javascript:void(0);" onclick="openLink('${ctx }/VirtualAccount/view.sms');"> Laudatory </a></li>
 							</ul>
-						</li>
+						</li>	
+						<li>
+							<a href="javascript:void(0);"> <span> Account Banking </span><i class="icon-arrow"></i></a>
+							<ul class="sub-menu">
+								<li><a href="javascript:void(0);" onclick="openLink('${ctx }/VirtualAccount/view.sms');"> Account Banking Information </a></li>
+							</ul>
+						</li>	
+						<li>
+							<a href="javascript:void(0);"> <span> Tuition Fees </span><i class="icon-arrow"></i></a>
+							<ul class="sub-menu">
+								<li><a href="javascript:void(0);" onclick="openLink('${ctx }/VirtualAccount/view.sms');"> Tuition Fees Information</a></li>
+							</ul>
+						</li>			
+						<li>
+							<a href="javascript:void(0);"><span> Report Collection </span> <i class="icon-arrow"></i></a>
+							<ul class="sub-menu">
+								<li>
+									<a href="javascript:void(0);"><span> Student Report</span><i class="icon-arrow"></i></a>
+									<ul class="sub-menu">
+										<li><a href="#"> Sample Link 1 </a></li>
+										<li><a href="#"> Sample Link 2 </a></li>
+										<li><a href="#"> Sample Link 3 </a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="javascript:void(0);"><span> Teacher Report</span><i class="icon-arrow"></i></a>
+									<ul class="sub-menu">
+										<li><a href="#"> Sample Link 1 </a></li>
+										<li><a href="#"> Sample Link 2 </a></li>
+										<li><a href="#"> Sample Link 3 </a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>						
 					</ul>
-				</li><!-- end: Sun Menu -->
+				</li>
 				
 				<li>
 					<a href="javascript:void(0)">
@@ -148,27 +145,17 @@
 					</a>										
 					<ul class="sub-menu">
 						<li>
-							<a href="javascript:;"> <span>Basic Information</span> <i class="icon-arrow"></i></a>
+							<a href="javascript:void(0);"> <span>Basic Information</span> <i class="icon-arrow"></i></a>
 							<ul class="sub-menu">
-								<li><a href="javascript:void(0);" onclick="">School Information </a></li>
-								<li><a href="#"> Sample Link 2 </a></li>
-								<li><a href="#"> Sample Link 3 </a></li>
+								<li><a href="javascript:void(0);" onclick="">System Information </a></li>
 							</ul>
 						</li>
 						<li>
-							<a href="javascript:;"><span>Remittance</span><i class="icon-arrow"></i></a>
+							<a href="javascript:void(0);"><span>User Information</span><i class="icon-arrow"></i></a>
 							<ul class="sub-menu">
-								<li><a href="#"> Sample Link 1 </a></li>
-								<li><a href="#"> Sample Link 2 </a></li>
-								<li><a href="#"> Sample Link 3 </a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="javascript:;"><span>Item 3</span><i class="icon-arrow"></i></a>
-							<ul class="sub-menu">
-								<li><a href="#"> Sample Link 1 </a></li>
-								<li><a href="#"> Sample Link 2 </a></li>
-								<li><a href="#"> Sample Link 3 </a></li>
+								<li><a href="javascript:void(0);" onclick="openLink('${ctx }/sms/userlist.sms');"> User List </a></li>
+								<li><a href="#"> User Type </a></li>
+								<li><a href="#"> History User </a></li>
 							</ul>
 						</li>
 					</ul><!-- end: Sub Menu -->
@@ -186,7 +173,8 @@
 		//alert(tmp);
 		tmp = tmp.replace('px', '') - 65 - 52;
 		//alert(tmp);
-		$('#ifLinkPage').css('height', 850 + 'px');
+		$('#ifLinkPage').css('minHeight', 800 + 'px');
+		$('#ifLinkPage').css('height', + 'auto');
 		if ($('#ifLinkPage').css('display') == 'none') {
 			$('#page-title').css('display', 'none');
 			$('#box1').css('display', 'none');

@@ -1,5 +1,6 @@
 eclipse.preferences.version=1
 encoding//src/main/resources/properties/database.properties=UTF-8
+encoding//src/main/webapp/WEB-INF/pages/sms/user/userlist.jsp=UTF-8
 encoding//src/main/webapp/pluginjsp/interface/footer.jsp=UTF-8
 encoding//src/main/webapp/pluginjsp/interface/header.jsp=UTF-8
 encoding//src/main/webapp/pluginjsp/interface/pluginheader.jsp=UTF-8

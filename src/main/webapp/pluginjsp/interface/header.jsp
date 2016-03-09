@@ -33,7 +33,9 @@
 					<span>MESSAGES</span>
 				</a>
 				<ul	class="dropdown-menu dropdown-light dropdown-messages dropdown-large">
-					<li><span class="dropdown-header">Unread messages</span></li>
+					<li>
+						<span class="dropdown-header">Unread messages</span>
+					</li>
 					<li>
 						<div class="drop-down-wrapper ps-container">
 							<ul>
@@ -136,7 +138,7 @@
 					<span class="username">Admin<i class="ti-angle-down"></i></span> 
 				</a>
 				<ul class="dropdown-menu dropdown-dark">
-					<li><a href="${ctx}/sms/user-profile.sms"> My Profile </a></li>
+					<li><a href="javascript:void(0);" onclick="openLink('${ctx}/sms/user-profile.sms');"> My Profile </a></li>
 					<li><a href="pages_calendar.html"> My Calendar </a></li>
 					<li><a hef="pages_messages.html"> My Messages (3) </a></li>
 					<li><a href="login_lockscreen.html"> Lock Screen </a></li>
@@ -153,7 +155,8 @@
 		</div>
 		<!-- end: MENU TOGGLER FOR MOBILE DEVICES -->
 	</div>
-	<a style="display: none;" class="dropdown-off-sidebar" data-toggle-class="app-offsidebar-open" data-toggle-target="#app" data-toggle-click-outside="#off-sidebar"> &nbsp;</a>
+	<a style="display: none;" class="dropdown-off-sidebar"
+	 data-toggle-class="app-offsidebar-open" data-toggle-target="#app" data-toggle-click-outside="#off-sidebar"> &nbsp;</a>
 	<!-- end: NAVBAR COLLAPSE -->
 </header>
 

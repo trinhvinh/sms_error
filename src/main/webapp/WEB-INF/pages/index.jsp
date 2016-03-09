@@ -83,7 +83,7 @@
    		}
 	}
 };
-</script> -->
+</script> 
 
 <script src="http://codejoust.github.com/session.js/session-0.4.js"></script>
 
@@ -92,7 +92,7 @@
   	if (session.original_session.visits){
     	document.getElementById('msg').innerHTML = "You've visited this page " + session.original_session.visits + " times.";
   	}
-</script>
+</script>-->
 
 </head>
 <!-- end: HEAD -->
@@ -131,8 +131,7 @@
 									</div>
 								</li>
 								<li>
-									<div class="sparkline-2"><span ></span>
-									</div>
+									<div class="sparkline-2"><span ></span></div>
 									<div class="values">
 										<strong class="text-dark">&#36;3,833</strong>
 										<p class="text-small no-margin"> Earnings </p>
@@ -1001,6 +1000,7 @@
 				</div><!-- end: FOURTH SECTION -->
 			</div>
 		</div>
+	
 	</div><!-- End App Content -->
 	
 	<!-- start: FOOTER -->

@@ -14,7 +14,7 @@
 	
 	<!-- start: MAIN CSS -->
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/core-sms/vendor/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/core-sms/vendor/fontawesome/css/font-">
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/core-sms/vendor/fontawesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/core-sms/vendor/themify-icons/themify-icons.min.css">
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/core-sms/vendor/animate.css/animate.min.css" media="screen">
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/core-sms/vendor/perfect-scrollbar/perfect-scrollbar.min.css" media="screen">
@@ -28,7 +28,7 @@
 	<!-- end: CLIP-TWO CSS -->
 	
 	<!-- start: CSS REQUIRED FOR THIS PAGE ONLY -->
-	<link rel="stylesheet" media="screen" href="${pageContext.request.contextPath}/resources/core-sms/bootstrap-touchspin/jquery.bootstrap-touchspin.min.css">
+	<link rel="stylesheet" media="screen" href="${pageContext.request.contextPath}/resources/core-sms/vendor/bootstrap-touchspin/jquery.bootstrap-touchspin.min.css">
 	<link rel="stylesheet" media="screen" href="${pageContext.request.contextPath}/resources/core-sms/vendor/select2/select2.min.css">
 	<link rel="stylesheet" media="screen" href="${pageContext.request.contextPath}/resources/core-sms/vendor/bootstrap-datepicker/bootstrap-datepicker3.standalone.min.css">
 	<link rel="stylesheet" media="screen" href="${pageContext.request.contextPath}/resources/core-sms/vendor/bootstrap-timepicker/bootstrap-timepicker.min.css">
@@ -75,7 +75,6 @@
 	<script type="text/javascript" src="${pageContext.request.contextPath}/resources/core-sms/assets/jqwidgets/jqxdatetimeinput.js"></script>
 	<script type="text/javascript" src="${pageContext.request.contextPath}/resources/core-sms/assets/jqwidgets/jqxnumberinput.js"></script>       
 	<script type="text/javascript" src="${pageContext.request.contextPath}/resources/core-sms/assets/jqwidgets/jqxcalendar.js"></script>
-	<script type="text/javascript" src="${pageContext.request.contextPath}/resources/core-sms/assets/jqwidgets/localization.js"></script>
 	<script type="text/javascript" src="${pageContext.request.contextPath}/resources/core-sms/assets/jqwidgets/globalization/globalize.js"></script>            
 	
 	<script type="text/javascript" src="${pageContext.request.contextPath}/resources/core-sms/assets/jquery/jquery.loadJSON.js"></script>
